@@ -14,11 +14,9 @@ Open `index.html` in a browser. No build step or package installation is require
 
 ## Publish
 
-This is a static site and can be hosted with GitHub Pages or another static hosting service:
+This is a static site. The repository includes a GitHub Actions workflow that deploys it to GitHub Pages on pushes to `main`.
 
-1. Push the project files to a GitHub repository.
-2. In the repository, open **Settings > Pages**.
-3. Choose **Deploy from a branch**, select the default branch and `/ (root)`, then save.
+Before the first deployment, a repository owner must open **Settings > Pages** and set **Build and deployment > Source** to **GitHub Actions**. Then rerun the failed **Deploy website to GitHub Pages** workflow from the repository's **Actions** tab. Later pushes to `main` deploy automatically.
 
 The photos and web fonts are loaded from external providers and require an internet connection.
 
